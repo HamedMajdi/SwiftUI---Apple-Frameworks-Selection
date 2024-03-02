@@ -7,40 +7,45 @@
 
 import SwiftUI
 
-struct DetailsView: View {
+struct FrameworkDetailView: View {
     
     let framework: Framework
+    
+    ///binding makes the isShowingDetailView be equal to whatever is is in the parent view
+    ///
+    @Binding var isShowingDetailView: Bool
+    @State private var isSafariViewShowing = false
+    
     var body: some View {
-
+        
         VStack(){
+            
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             
             Spacer()
             FrameworkTitleView(framework: framework)
             
             Text(framework.description)
+                .font(.body)
                 .padding()
             
             Spacer()
             
-            Button(action: {
+            Button{
+                isSafariViewShowing = true
                 
-            },
-                   label: {
-                Text("Learn More")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.white)
-                    .frame(width: 280, height: 60)
-                    .background(.red)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            }label: {
+                AFButtons(title: "Learn More")
                 
-            })
+            }
             
-            Spacer()
         }
+        .fullScreenCover(isPresented: $isSafariViewShowing, content: {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+        })
     }
 }
 
 #Preview {
-    DetailsView(framework: MockData.sampleFramework)
+    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(true))
 }

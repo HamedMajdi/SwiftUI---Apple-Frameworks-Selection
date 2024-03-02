@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5782565E2B91BB9000C23133 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782565D2B91BB9000C23133 /* FrameworkDetailView.swift */; };
+		578256602B91BE9600C23133 /* AFButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782565F2B91BE9600C23133 /* AFButtons.swift */; };
+		578256622B91C0FD00C23133 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578256612B91C0FD00C23133 /* FrameworkGridViewModel.swift */; };
+		578256642B92FCD000C23133 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578256632B92FCD000C23133 /* SafariView.swift */; };
+		578256662B9301F100C23133 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578256652B9301F100C23133 /* FrameworkTitleView.swift */; };
+		578256682B93026200C23133 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578256672B93026200C23133 /* XDismissButton.swift */; };
 		5797AD712B90A57600E046D6 /* SwiftUI___Apple_Frameworks_SelectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797AD702B90A57600E046D6 /* SwiftUI___Apple_Frameworks_SelectionApp.swift */; };
-		5797AD732B90A57600E046D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797AD722B90A57600E046D6 /* ContentView.swift */; };
+		5797AD732B90A57600E046D6 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797AD722B90A57600E046D6 /* FrameworkGridView.swift */; };
 		5797AD752B90A57900E046D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5797AD742B90A57900E046D6 /* Assets.xcassets */; };
 		5797AD782B90A57900E046D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5797AD772B90A57900E046D6 /* Preview Assets.xcassets */; };
+		5797AD7F2B90A68500E046D6 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5797AD7E2B90A68500E046D6 /* Framework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5782565D2B91BB9000C23133 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		5782565F2B91BE9600C23133 /* AFButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButtons.swift; sourceTree = "<group>"; };
+		578256612B91C0FD00C23133 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		578256632B92FCD000C23133 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		578256652B9301F100C23133 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		578256672B93026200C23133 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		5797AD6D2B90A57600E046D6 /* SwiftUI - Apple Frameworks Selection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI - Apple Frameworks Selection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5797AD702B90A57600E046D6 /* SwiftUI___Apple_Frameworks_SelectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI___Apple_Frameworks_SelectionApp.swift"; sourceTree = "<group>"; };
-		5797AD722B90A57600E046D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5797AD722B90A57600E046D6 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		5797AD742B90A57900E046D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5797AD772B90A57900E046D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5797AD7E2B90A68500E046D6 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +66,16 @@
 			isa = PBXGroup;
 			children = (
 				5797AD702B90A57600E046D6 /* SwiftUI___Apple_Frameworks_SelectionApp.swift */,
-				5797AD722B90A57600E046D6 /* ContentView.swift */,
+				5797AD722B90A57600E046D6 /* FrameworkGridView.swift */,
+				5797AD7E2B90A68500E046D6 /* Framework.swift */,
+				5782565D2B91BB9000C23133 /* FrameworkDetailView.swift */,
+				5782565F2B91BE9600C23133 /* AFButtons.swift */,
+				578256612B91C0FD00C23133 /* FrameworkGridViewModel.swift */,
+				578256632B92FCD000C23133 /* SafariView.swift */,
+				578256652B9301F100C23133 /* FrameworkTitleView.swift */,
 				5797AD742B90A57900E046D6 /* Assets.xcassets */,
 				5797AD762B90A57900E046D6 /* Preview Content */,
+				578256672B93026200C23133 /* XDismissButton.swift */,
 			);
 			path = "SwiftUI - Apple Frameworks Selection";
 			sourceTree = "<group>";
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5797AD732B90A57600E046D6 /* ContentView.swift in Sources */,
+				5797AD732B90A57600E046D6 /* FrameworkGridView.swift in Sources */,
+				5782565E2B91BB9000C23133 /* FrameworkDetailView.swift in Sources */,
+				578256682B93026200C23133 /* XDismissButton.swift in Sources */,
+				578256602B91BE9600C23133 /* AFButtons.swift in Sources */,
+				5797AD7F2B90A68500E046D6 /* Framework.swift in Sources */,
 				5797AD712B90A57600E046D6 /* SwiftUI___Apple_Frameworks_SelectionApp.swift in Sources */,
+				578256622B91C0FD00C23133 /* FrameworkGridViewModel.swift in Sources */,
+				578256662B9301F100C23133 /* FrameworkTitleView.swift in Sources */,
+				578256642B92FCD000C23133 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

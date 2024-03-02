@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct FrameworkTitleView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct FrameworkTitleView: View{
+    
+    var framework: Framework
+
+    var body: some View{
+        VStack{
+            Image(framework.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 75, height: 75)
+            
+            Text(framework.name)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .scaledToFit()
+                .minimumScaleFactor(0.5)
+        }
+        .padding()
     }
 }
 
-#Preview {
-    FrameworkTitleView()
+struct FrameworkTitleView_Previews: PreviewProvider{
+    static var previews: some View{
+        FrameworkTitleView(framework: MockData.sampleFramework)
+    }
 }
